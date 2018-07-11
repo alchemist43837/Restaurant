@@ -1,0 +1,19 @@
+
+body{
+  background-color: blue grey;
+}
+html{
+ /*font-family: 'Gaegu', cursive;*/
+ font-family: 'Pacifico', cursive;
+ font-family: 'Asap', sans-serif;
+}
+h1{
+  color: teal;
+  text-align:  center;
+  font-style: italic;
+}
+p{
+  text-align: justify;
+  font-size: 14px;
+  line-height: 14px;
+}
