@@ -1,0 +1,44 @@
+.contenedor{
+  width: 960px;
+}
+body{
+  background-image:url(../images/bg-2.png);
+}
+.productos{
+  position: relative;
+}
+.items{
+  background-color: green;
+  width:300px;
+  height: 200px;
+  float: left;
+  margin: 10px;
+}
+
+li{
+
+  list-style-type:  none;
+  float: left;
+  width: 100px;
+  text-align: left;
+  color: #FFF;
+  transform: translateY(100%);
+}
+ul{
+  float: left;
+  bottom: 300px;
+  background-color: red;
+  height: 40px;
+  width: 700px;
+  padding: 10px;
+}
+
+img{
+  float: left;
+}
+header{
+  position: relative;
+  padding: 10px;
+  display: inline-flex;
+  padding: 30px;
+}
