@@ -6,14 +6,25 @@ html{
  /*font-family: 'Gaegu', cursive;*/
  font-family: 'Pacifico', cursive;
  font-family: 'Asap', sans-serif;
+ background-image: url(../images/white-wood.jpg);
+ background-attachment: fixed;
 }
 h1{
   color: teal;
   text-align:  center;
   font-style: italic;
+  background-color:rgba(190, 145, 121, 0.7) ;
 }
 p{
   text-align: justify;
   font-size: 14px;
   line-height: 14px;
+}
+
+.destacado{
+  background-color: rgba(200, 145, 150, 0.7) ;
+  font-family: serif;
+  font-size:22px;
+  line-height: normal;
+
 }
