@@ -1,0 +1,16 @@
+.rojo{
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: 20px;
+
+}
+
+.verde{
+  background-color: green;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  bottom:  50px;
+}

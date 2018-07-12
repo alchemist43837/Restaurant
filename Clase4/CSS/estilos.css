@@ -1,0 +1,40 @@
+.rojo{
+  background-color: red;
+  height: 400px;
+  width: 300px;
+  float: left;
+  margin-top: 30px;
+  padding: 30px;
+  border: 5px solid #000;
+  margin-bottom: 30px;
+}
+.azul{
+  background-color: blue;
+  height: 400px;
+  width: 430px;
+  float: right;
+  margin-bottom:30px;
+  margin-top: 30px;
+  padding: 30px;
+  border: 5px solid #000;
+}
+.verde{
+  background-color: green;
+  height: 100px;
+  padding: 30px;
+  border: 5px solid #000;
+}
+.amarillo{
+  background-color: yellow;
+  height: 100;
+  clear: both;
+  padding: 30px;
+  border: 5px solid #000;
+  margin-top: 30px;
+
+}
+
+.contenedor{
+  width: 960px;
+  margin: 0 auto;
+}
