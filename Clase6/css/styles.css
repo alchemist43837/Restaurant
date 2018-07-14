@@ -76,15 +76,31 @@ strong{
     box-sizing: border-box;
     /*box sizing , sirve para que  no intervenga las medidas del contenedor*/
   }
-  
+
   .contenedor{
     width: 95%;
     background-color: darkblue;
     margin: 0 auto;
     border: 20px solid green;
   }
-
-
+  .caja_a{
+    float: left;
+    width: 40%;
+    background-color: red;
+    border: 4px solid #000;
+  }
+  .caja_b{
+    float: right;
+    width: 55%;
+    background-color:green;
+    border: 4px solid #000;
+  }
+  .caja_c{
+    float: none; /* o */
+    width: 8.33%;
+    background-color:blue;
+    border: 4px solid #000;
+  }
 }
 
 @media (query) {
