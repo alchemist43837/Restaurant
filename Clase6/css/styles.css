@@ -1,0 +1,92 @@
+/*Selector universal*/
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /*box sizing , sirve para que  no intervenga las medidas del contenedor*/
+}
+
+
+.contenedor{
+  width: 1200px;
+  background-color: orange;
+  overflow: hidden;
+  margin: 0 auto;
+
+}
+
+.caja_a{
+  float: left;
+  width: 20.83%;
+  background-color: red;
+  border: 4px solid #000;
+}
+.caja_b{
+  float: left;
+  width: 66.67%;
+  background-color:green;
+  margin-left: 2.08%;
+  margin-right: 2.08%;
+  border: 4px solid #000;
+}
+.caja_c{
+  float: left;
+  width: 8.33%;
+  background-color:blue;
+  border: 4px solid #000;
+}
+/*
+body{
+  font-size: 14px;
+}*/
+header{
+  width: 100vw;
+  height: 20vh;
+  background-color: gray;
+  margin-bottom: 20px;
+  border: 4px solid #000;
+}
+
+.caja_a h2,
+.caja_b h2,
+.caja_c h2{
+  font-size: 1.75em;
+}
+/*tambien se lo puede declarar en una clase*/
+
+.parrafo_de_caja{
+  font-size: 0.8125em;
+}
+p{
+  font-size: 0.8125em;
+}
+
+.negritas{
+  font-size: 1.1539em;
+}
+strong{
+  font-size: 1.1539em;
+}
+
+@media (min-width 900px) {
+  /*Selector universal*/
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*box sizing , sirve para que  no intervenga las medidas del contenedor*/
+  }
+  
+  .contenedor{
+    width: 95%;
+    background-color: darkblue;
+    margin: 0 auto;
+    border: 20px solid green;
+  }
+
+
+}
+
+@media (query) {
+
+}
