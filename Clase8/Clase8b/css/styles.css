@@ -1,0 +1,17 @@
+.container-fluid{
+  background-color: violet;
+  height: 400px;
+}
+.red,.blue,.green{
+  height: 100px;
+}
+
+.red{
+  background-color: red;
+}
+.green{
+  background-color: green;
+}
+.blue{
+  background-color: blue;
+}

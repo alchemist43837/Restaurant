@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid{
+  /* background-color: red; */
+  background-image:url(../images/bg-body.png);
+  /* width: 100%; */
+}
+.main-nav ul{
+  background-color:#323232;
+  overflow: hidden;
+  text-align: center;
+
+  width: 100%;
+}
+.main-nav li{
+  list-style-type: none;
+  float: left;
+  border: 1px solid black;
+  padding: 0px 5px;
+}
+.main-nav a{
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  display: block;
+  padding: 0px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.logo{
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.ion-navicon-round img{
+  height: 50px;
+  width: 50px;
+  margin-bottom: 10px;
+}
+.main-header  {
+  text-align: center;
+}
+.product img{
+  width: 100%;
+}
+.banner{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.main-footer{
+  clear: both;
+}
+
+
+
+.main-footer ul li{
+  list-style-type: none;
+  float: left;
+  border: 1px solid black;
+  background-color: #B80000
+}
+
+.main-footer ul li a {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+.main-footer ul{
+  overflow: hidden;
+}
+
+
+
+/* https://getbootstrap.com/docs/4.1/utilities/display/ properties*/
