@@ -1,0 +1,5 @@
+xampp/htdocs/
+  * ahi se cargan los archivos para el servidor  php
+  para levantar los archivos php
+
+se cargan desde localhost:8888/(carpetas del htdocs)
