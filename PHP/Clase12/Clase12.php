@@ -273,6 +273,7 @@
       "Italia" => ["Roma", "Milan", "Venecia"],
       "Alemania" => ["Munich", "Berlin", "Frankfurt"]
       ];
+      //Este
       $esAmericano=[
         "Argentina" => [true],
         "Brasil" => [true],
@@ -281,5 +282,12 @@
         "Italia" => [false],
         "Alemania" => [false]
         ];
+      //o este
+      $Argentina=[esAmericano=>true];
+      $Brasil=[esAmericano=>true];
+      $Colombia=[esAmericano=>true];
+      $Francia=[esAmericano=>false];
+      $Italia=[esAmericano=>false];
+      $Alemania=[esAmericano=>false];
 
 ?>
