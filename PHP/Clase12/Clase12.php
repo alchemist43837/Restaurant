@@ -237,7 +237,7 @@
           echo $capital." es capital de : ".$pais."\n";
       }
 
-      //Ejercicio 14
+      //Ejercicio 14 -- Con Mucho ayudin de la web
       $ceu = [
       "Argentina" => ["Buenos Aires", "Córdoba", "Santa Fé"],
       "Brasil" => ["Brasilia", "Rio de Janeiro", "Sao Pablo"],
@@ -246,7 +246,40 @@
       "Italia" => ["Roma", "Milan", "Venecia"],
       "Alemania" => ["Munich", "Berlin", "Frankfurt"]
       ];
-
-
+      function recorro($ceu){
+         foreach($ceu as $key=>$value){
+               if (is_array($value)){
+                  //si es un array sigo recorriendo
+                echo '<br>';
+                echo 'Las ciudades de '. $key." son:";
+                echo '<br>';
+                recorro($value);
+                }
+              else{
+                 //si es un elemento lo muestro
+                 // echo $key.': '.$value ;
+                 echo $value;
+                 echo '<br>';
+                }
+            }
+        }
+      echo recorro($ceu);
+      //Ejercicio 15
+      $ceu = [
+      "Argentina" => ["Buenos Aires", "Córdoba", "Santa Fé"],
+      "Brasil" => ["Brasilia", "Rio de Janeiro", "Sao Pablo"],
+      "Colombia" => ["Cartagena", "Bogota", "Barranquilla"],
+      "Francia" => ["Paris", "Nantes", "Lyon"],
+      "Italia" => ["Roma", "Milan", "Venecia"],
+      "Alemania" => ["Munich", "Berlin", "Frankfurt"]
+      ];
+      $esAmericano=[
+        "Argentina" => [true],
+        "Brasil" => [true],
+        "Colombia" => [true],
+        "Francia" => [false],
+        "Italia" => [false],
+        "Alemania" => [false]
+        ];
 
 ?>
