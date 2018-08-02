@@ -164,6 +164,10 @@ switch ($remera) {
     echo "no es color primario";
     break;
 }
-
-
 ?>
+<?php
+  for ($i=0; $i <100 ; $i++) {
+    echo "$i <br/>";
+  }
+
+ ?>

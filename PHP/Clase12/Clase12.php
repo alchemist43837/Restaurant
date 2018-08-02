@@ -41,27 +41,27 @@
       $contador++;
     }
 //ejercicio6A, el rand no funciona bien
-    $moneda=rand(0,1);
     $cara=0;
-    $sello=0;
-      while($cara<=5){
-
+    $seca=0;
+      while($cara<5){
+        $moneda=rand(0,1);
           if($moneda==1){
             $cara++;
           }
           else {
-            $sello++;
+            $seca++;
           }
     }
-    echo "Se utilizaron ". ($cara+$sello) ." tiros para obtener ".$cara." caras ";
+    echo "<br/>";
+    echo "Se utilizaron ". ($cara+$seca) ." tiros para obtener ".$cara." caras ";
+
 //Ejercicio 6b ,other
 
-    $moneda=rand(0,1);
     $cara=0;
     $sello=0;
-
-    while($cara<=5){
-      ($moneda==1)?cara++:sello++;
+    while($cara<5){
+      $moneda=rand(0,1);
+      ($moneda==1) ? $cara++ : $sello++;
     }
     echo "Se utilizaron ". ($cara+$sello) ." tiros para obtener ".$cara." caras ";
 
@@ -98,46 +98,63 @@
     }
 
 
-//ejercicio9
-    //FOR
-    $numAl=rand(0,10);
-    $array=[$numAl,$numAl,$numAl,$numAl,$numAl,
-            $numAl,$numAl,$numAl,$numAl,$numAl];
-    // $array=[rand(0,10),rand(0,10),rand(0,10),rand(0,10),rand(0,10),
-    //     rand(0,10),rand(0,10),rand(0,10),rand(0,10),rand(0,10)];
-    for ($i=0; $i <count($array) ; $i++) {
-      if ($array[$i]==5){
-        echo $array[$i]." Se Encontró un 5! en la posicion ".key($array)."\n";
-        exit;
-      }
-       next($array);
-    }
-
-    //while a revisar
-    $numAl=rand(0,10);
-    $array=[$numAl,$numAl,$numAl,$numAl,$numAl,
-            $numAl,$numAl,$numAl,$numAl,$numAl];
-    // $array=[rand(0,10),rand(0,10),rand(0,10),rand(0,10),rand(0,10),
-    //     rand(0,10),rand(0,10),rand(0,10),rand(0,10),rand(0,10)];
-    $i=0;
-    while($i<count($array)) {
-
+    //ejercicio9
+        //FOR
+        for ($i=0; $i <10 ; $i++) {
+          $numAl=rand(0,10);
+          $array[]=$numAl;
+       }
+      for ($i=0; $i< count($array) ; $i++) {
           if ($array[$i]==5){
-            echo $array[$i]." Se Encontró un 5! en la posicion ".key($array)."\n";
-
-            $i++;
+            echo $array[$i]." Se Encontró un 5! en la posicion ".$i."<br>";
             exit;
           }
-        next($array);
+        }
+
+
+    //while a revisar
+      $i=0;
+      while ($i < 10) {
+        $num=rand(0,10);
+        $array[]=$num;
         $i++;
+      }
+      $a=0;
+      while ($a < count($array)) {
+        if($array[$a]==5){
+          echo "Se Encontró un 5! en la posicion ".$a."<br>";
+          exit;
+        }
+        $a++;
+      }
+
+
+
+
+    //viejo
+    // $numAl=rand(0,10);
+    // $array=[$numAl,$numAl,$numAl,$numAl,$numAl,
+    //         $numAl,$numAl,$numAl,$numAl,$numAl];
+    // // $array=[rand(0,10),rand(0,10),rand(0,10),rand(0,10),rand(0,10),
+    // //     rand(0,10),rand(0,10),rand(0,10),rand(0,10),rand(0,10)];
+    // $i=0;
+    // while($i<count($array)) {
+    //
+    //       if ($array[$i]==5){
+    //         echo $array[$i]." Se Encontró un 5! en la posicion ".key($array)."\n";
+    //
+    //         $i++;
+    //         exit;
+    //       }
+    //     next($array);
+    //     $i++;
     }
-    //DO WHILE
+    //DO WHILE -- pendiente a corregir
     $numAl=rand(0,10);
     $array=[$numAl,$numAl,$numAl,$numAl,$numAl,
             $numAl,$numAl,$numAl,$numAl,$numAl];
     // $array=[rand(0,10),rand(0,10),rand(0,10),rand(0,10),rand(0,10),
     //     rand(0,10),rand(0,10),rand(0,10),rand(0,10),rand(0,10)];
-
     $i=0;
     do{
       if ($array[$i]==5){
@@ -218,7 +235,7 @@
       // Ordenar los datos con volumen descendiente, edición ascendiente
       // Agregar $datos como el último parámetro, para ordenar por la clave común
       array_multisort($volumen, SORT_DESC, $edición, SORT_ASC, $datos);
-      ?>
+
 
       //solucion Ejercicio 13
       $ceu = array(
@@ -264,7 +281,8 @@
             }
         }
       echo recorro($ceu);
-      //Ejercicio 15
+
+      //Ejercicio 14 Solucion OK
       $ceu = [
       "Argentina" => ["Buenos Aires", "Córdoba", "Santa Fé"],
       "Brasil" => ["Brasilia", "Rio de Janeiro", "Sao Pablo"],
@@ -273,21 +291,57 @@
       "Italia" => ["Roma", "Milan", "Venecia"],
       "Alemania" => ["Munich", "Berlin", "Frankfurt"]
       ];
-      //Este
-      $esAmericano=[
-        "Argentina" => [true],
-        "Brasil" => [true],
-        "Colombia" => [true],
-        "Francia" => [false],
-        "Italia" => [false],
-        "Alemania" => [false]
-        ];
-      //o este
-      $Argentina=[esAmericano=>true];
-      $Brasil=[esAmericano=>true];
-      $Colombia=[esAmericano=>true];
-      $Francia=[esAmericano=>false];
-      $Italia=[esAmericano=>false];
-      $Alemania=[esAmericano=>false];
+
+      foreach ($ceu as $paises => $ciudades) {
+          echo "Las ciudades de ".$paises." son : <br>";;
+          foreach ($ciudades as $ciudad) {
+            echo $ciudad;
+            echo "<br>";
+          }
+      }
+
+
+
+      //Ejercicio 15
+      $ceu = [
+      "Argentina" => [
+        "EsAmericano"=>true;
+        "Ciudades"=>["Buenos Aires", "Córdoba", "Santa Fé"]
+      ],
+      "Brasil" => [
+        "EsAmericano"=>true;
+        "Ciudades"=>["Brasilia", "Rio de Janeiro", "Sao Pablo"]
+      ],
+      "Colombia" => [
+        "EsAmericano"=>true;
+        "Ciudades"=>["Cartagena", "Bogota", "Barranquilla"]
+      ],
+      "Francia" => [
+        "EsAmericano"=>false;
+        "Ciudades"=>["Paris", "Nantes", "Lyon"]
+      ],
+      "Italia" => [
+        "EsAmericano"=>false;
+        "Ciudades"=>["Roma", "Milan", "Venecia"]
+      ],
+      "Alemania" => [
+        "EsAmericano"=>false;
+        "Ciudades"=>["Munich", "Berlin", "Frankfurt"]
+      ]
+    ];
+
+          foreach ($ceu as $paises => $contenido) {
+              echo "Las ciudades de ".$paises." son : <br>";
+              foreach ($paises as $key => $value) {
+                if ($key["EsAmericano"]==true) {
+                  echo "Es Americano";
+                  // var_dump($value);
+                }
+              }
+              // foreach ($ciudades as $ciudad) {
+              //   echo $ciudad;
+              //   echo "<br>";
+              // }
+          }
 
 ?>
