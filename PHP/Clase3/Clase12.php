@@ -299,49 +299,87 @@
             echo "<br>";
           }
       }
-
-
-
-      //Ejercicio 15
+      //Ejercicio 15 solucionado
       $ceu = [
       "Argentina" => [
-        "EsAmericano"=>true;
+        "EsAmericano"=>true,
         "Ciudades"=>["Buenos Aires", "Córdoba", "Santa Fé"]
       ],
       "Brasil" => [
-        "EsAmericano"=>true;
+        "EsAmericano"=>true,
         "Ciudades"=>["Brasilia", "Rio de Janeiro", "Sao Pablo"]
       ],
       "Colombia" => [
-        "EsAmericano"=>true;
+        "EsAmericano"=>true,
         "Ciudades"=>["Cartagena", "Bogota", "Barranquilla"]
       ],
       "Francia" => [
-        "EsAmericano"=>false;
+        "EsAmericano"=>false,
         "Ciudades"=>["Paris", "Nantes", "Lyon"]
       ],
       "Italia" => [
-        "EsAmericano"=>false;
+        "EsAmericano"=>false,
         "Ciudades"=>["Roma", "Milan", "Venecia"]
       ],
       "Alemania" => [
-        "EsAmericano"=>false;
+        "EsAmericano"=>false,
         "Ciudades"=>["Munich", "Berlin", "Frankfurt"]
       ]
-    ];
+      ];
 
-          foreach ($ceu as $paises => $contenido) {
-              echo "Las ciudades de ".$paises." son : <br>";
-              foreach ($paises as $key => $value) {
-                if ($key["EsAmericano"]==true) {
-                  echo "Es Americano";
-                  // var_dump($value);
-                }
-              }
-              // foreach ($ciudades as $ciudad) {
-              //   echo $ciudad;
-              //   echo "<br>";
-              // }
+      foreach ($ceu as $paises => $contenido) {
+          // echo "Las ciudades de ".$paises." son : <br>";
+          if ($contenido["EsAmericano"]) {
+             echo "<br>";
+             echo "Las ciudades de ".$paises." son :";
+             echo "<br>";
+             foreach ($contenido["Ciudades"] as $key)  {
+               echo "<li>" .$key."</li>";
+             }
+            }
           }
+
+    //
+    //   //Ejercicio 15
+    //   $ceu = [
+    //   "Argentina" => [
+    //     "EsAmericano"=>true;
+    //     "Ciudades"=>["Buenos Aires", "Córdoba", "Santa Fé"]
+    //   ],
+    //   "Brasil" => [
+    //     "EsAmericano"=>true;
+    //     "Ciudades"=>["Brasilia", "Rio de Janeiro", "Sao Pablo"]
+    //   ],
+    //   "Colombia" => [
+    //     "EsAmericano"=>true;
+    //     "Ciudades"=>["Cartagena", "Bogota", "Barranquilla"]
+    //   ],
+    //   "Francia" => [
+    //     "EsAmericano"=>false;
+    //     "Ciudades"=>["Paris", "Nantes", "Lyon"]
+    //   ],
+    //   "Italia" => [
+    //     "EsAmericano"=>false;
+    //     "Ciudades"=>["Roma", "Milan", "Venecia"]
+    //   ],
+    //   "Alemania" => [
+    //     "EsAmericano"=>false;
+    //     "Ciudades"=>["Munich", "Berlin", "Frankfurt"]
+    //   ]
+    // ];
+    //
+    //       foreach ($ceu as $paises => $contenido) {
+    //           echo "Las ciudades de ".$paises." son : <br>";
+    //           foreach ($paises as $key => $value) {
+    //             if ($key["EsAmericano"]==true) {
+    //               echo "Es Americano";
+    //               // var_dump($value);
+    //             }
+    //           }
+    //           // foreach ($ciudades as $ciudad) {
+    //           //   echo $ciudad;
+    //           //   echo "<br>";
+    //           // }
+    //       }
 
 ?>
