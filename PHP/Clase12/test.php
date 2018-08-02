@@ -222,10 +222,11 @@
              foreach ($ceu as $paises => $contenido) {
                  // echo "Las ciudades de ".$paises." son : <br>";
                  if ($contenido["EsAmericano"]) {
-                    echo $paises;
-                    // echo "<br>";
-                    foreach ($contenido as $key)  {
-                      echo $key["Ciudades"];
+                    echo "<br>";
+                    echo "Las ciudades de ".$paises." son :";
+                    echo "<br>";
+                    foreach ($contenido["Ciudades"] as $key)  {
+                      echo "<li>" .$key."</li>";
                     }
                    }
                  }
