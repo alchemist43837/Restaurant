@@ -1,0 +1,6 @@
+Action , es a donde va a parar el formulario
+
+Method =  Como sera el metodo de envio
+
+boton  : submit
+GET : Se puede usar para cambiar formularios

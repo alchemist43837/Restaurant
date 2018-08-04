@@ -48,7 +48,7 @@
           if($moneda==1){
             $cara++;
           }
-          else {
+          else {string
             $seca++;
           }
     }
