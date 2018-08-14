@@ -1,4 +1,5 @@
 <?php
+
   $paises=["Alemania","Argentina","Argelia","Brasil","Colombia","Ecuador","España","Filipinas","Mexico","Chile"];
   $paisSeleccionado =trim($POST["pais"]);
  ?>
@@ -77,11 +78,3 @@
 
     </body>
 </html>
-
-<!--
-// foreach ($_GET as $componentes ) {
-//     echo $componentes ."  <br>";
-//
-//     }
-
- ?> -->
