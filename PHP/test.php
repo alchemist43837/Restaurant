@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -5,8 +7,10 @@
     <title></title>
   </head>
   <body>
+ <form name="form" action="" method="post">
 
-    <select id="cboGiro" name="cboGiro" multiple="multiple"
+
+    <select id="cboGiro" name="cboGiro"
         class="form-control select2 cboGiro select2-offscreen"
         data-model-property="cboGiro" data-clave-perfil="control-giro" data-toggle="tooltip"
         data-val="" data-val-number="" data-val-required="" title="" data-original-title=""
@@ -160,7 +164,7 @@
       <option value="4655">OFICINA EQUIPOS COMERCIANTE MAYORISTA</option>
       <option value="4815">NEGOCIOS Y ESCUELAS DE SECRETARIADO</option>
       <option value="4671">MERCANCÍAS DE PEDAZO, NOCIONES Y OTRA MERCANCÍAS SECAS COMERCIANTE MAYORISTA</option>
-      <option value="4682">MERCADOS ELECTRÓNICOS BUSINESS TO BUSINESS</option>
+      <option value="4682">MEvariableRCADOS ELECTRÓNICOS BUSINESS TO BUSINESS</option>
       <option value="4865">MEDIO AMBIENTE, CONSERVACIÓN Y VIDA SILVESTRE ORGANIZACIONES</option>
       <option value="4667">MAYORISTAS MERCANTES MATERIAL RECICLABLES</option>
       <option value="4717">MASCOTAS Y TIENDAS DE SUMINISTROS DE PET</option>
@@ -282,7 +286,7 @@
       <option value="4866">ACTIVIDADES DE LAS FINANZAS PÚBLICAS</option>
       <option value="4742">ACTIVIDADES DE INVERSIÓN FINANCIERA MISCELÁNEOS</option>
     </select>
-
+ </form>
     <!-- <script type="text/javascript">
     var select = document.getElementById('cboGiro');
       select.addEventListener('change',
@@ -293,3 +297,8 @@
     </script> -->
   </body>
 </html>
+
+<?php
+
+  echo $_POST["cboGiro"];
+ ?>
