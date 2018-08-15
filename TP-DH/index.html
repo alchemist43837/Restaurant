@@ -1,10 +1,99 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <meta charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>FID e-commerce</title>
   </head>
   <body>
-    
+    <header>
+      <div class="logo">
+        <img src="images/logo_ecomerce.jpg" alt="Logo">
+      </div>
+      <div class="main-menu" >
+        <ul class="row">
+            <li class="col-sm12 col-md-2"><a href="#">Home</a></li>
+            <li class="col-sm12 col-md-2"><a href="#">Quienes somos</a></li>
+            <li class="col-sm12 col-md-2"><a href="# id_categorias">Categorias</a></li>
+            <li class="col-sm12 col-md-2"><a href="# id_contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="searchbar">
+          <!-- Buscador y carrito de compras -->
+        <div class="sitesearch">
+          <form data-component="common/header/SearchSuggestion,search/SearchField" action="https://www.reebok.com.ar/search" method="get" id="SimpleSearchForm" class="simplesearch">
+            <fieldset>
+              <a class="close"></a>
+              <label for="searchinput" class="label-off">Buscar</label>
+              <input placeholder="Buscar" tabindex="0" class="simplesearchinput textinput" id="searchinput" type="text" name="q" maxlength="" value="Buscar" autocomplete="off">
+              <button class="btn_simplesearch" type="submit" value="Buscar" name="simplesearch" href="#Sitio_a_bucar">Buscar</button>
+            </fieldset>
+            <div id="suggestions"></div>
+          </form>
+        </div>
+        <div>
+          <div id="minicart" class="minicart" data-component="checkout/MiniCart">
+          	<a class="minicarttotal" href="#" title="Realizar pedido">
+          		<span>Realizar pedido</span>
+          		<strong><b>(</b>0<b>)</b></strong>
+          		<div class="minicarticon"></div>
+          	</a>
+          </div>
+        </div>
+      	<div class="wishlist-count-wrap">
+      		<a id="wishlist-count" class="wishlist-count wishlist-count-hide"  href="#">
+      			<span>0</span>
+      		</a>
+      	</div>
+      </div>
+    </header>
+      <section class="productos">
+
+      </section>
+      <section class="others">
+
+      </section>
+      <div class="footer_top_wrapper">
+
+
+
+
+
+
+
+
+
+
+
+
+      <ul class="contacts">
+      	<li><span style="color:#FFFFFF;">CONTACTO</span></li>
+      	<li>Teléfono Gratuito</li>
+      	<li><a class="" href="#">Contactanos</a></li>
+      	<li><a class="" href="#">Preguntas Frecuentes</a></li>
+      </ul>
+      <ul class="footer-social-icons">
+        <li><a class="twitter" target="_blank" href="https://twitter.com/" manual_cm_sp="footer-_-social-_-twitter">d</a></li>
+        <li><a class="facebook" target="_blank" href="https://www.facebook.com/ReebokArgentina" manual_cm_sp="footer-_-social-_-facebook">s</a></li>
+        <li><a class="instagram" target="_blank" href="http://instagram.com/reebokargentina" manual_cm_sp="footer-_-social-_-instagram">s</a></li>
+        <li><a class="pinterest" target="_blank" href="http://www.pinterest.com/reebok/" manual_cm_sp="footer-_-social-_-pinterest">a</a></li>
+      </ul>
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
   </body>
 </html>
