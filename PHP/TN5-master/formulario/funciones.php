@@ -50,7 +50,7 @@ function guardarUsuario($data,$archivo){
 
 
     file_put_contents('usuarios.json', $usuarioJSON . PHP_EOL, FILE_APPEND);
-abc
+
 }
 
 function traerTodos(){
