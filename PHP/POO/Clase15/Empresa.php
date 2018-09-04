@@ -1,5 +1,5 @@
 <?php
-Class Empresa
+Class Empresa extends Cliente
 {
   string $nombreFantasia;
   int $cuit;

@@ -1,5 +1,5 @@
 <?php
-  Class Individual
+  Class Individual extends Cliente
   {
     string $nombre;
     string $apellido;
