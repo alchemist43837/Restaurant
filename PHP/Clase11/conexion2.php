@@ -31,7 +31,7 @@ try {
 
 echo '<ul>';
 	foreach ($query->fetchAll(PDO::FETCH_ASSOC) as $key => $value) {
-		echo "<li>{$value['lalala']}</li>" ;
+		echo "<li> {$value['lalala']} </li>" ;
 	}
 
 	echo '</ul>';
