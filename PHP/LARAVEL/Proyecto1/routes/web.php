@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/Productos',function() {
+
+  return 'Hola Mundo' ;
+});
+
+Route::get('/resultado/{numero}',function($numero) {
+   if ($numero%2==0){
+     return 'Es par';
+   }
+});
