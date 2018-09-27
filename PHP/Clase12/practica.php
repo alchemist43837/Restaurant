@@ -16,9 +16,11 @@ $query= $db->prepare('select * from genres');
 
 $query->execute();
 
-echo '<ul>';
-	foreach ($query->fetchAll(PDO::FETCH_ASSOC) as $key => $value) {
-		echo "<li> {$value['name']} </li>" ;
-	}
-
-	echo '</ul>';
+var_dump($query);
+//
+// echo '<ul>';
+// 	foreach ($query->fetchAll(PDO::FETCH_ASSOC) as $key => $value) {
+// 		echo "<li> {$value['name']} </li>" ;
+// 	}
+//
+// 	echo '</ul>';
