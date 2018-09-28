@@ -20,8 +20,17 @@ Route::get('/Productos',function() {
   return 'Hola Mundo' ;
 });
 
-Route::get('/resultado/{numero}',function($numero) {
-   if ($numero%2==0){
-     return 'Es par';
-   }
+Route::get('/resultado/{numero}/{num2?}',function($numero,$num2=null ) {
+// PSR2 --convencion
+    $respuesta ;
+    if ($num2===null){
+      $respuesta = ($numero % 2 ) ?'Esimpar':'Es par';
+    }
+    else{
+      $respuesta=$numero*$num2;
+    }
+     return $respuesta;
+
 });
+
+Route::get('/peliculas/{id}', 'PeliculasController@buscarPeliculaId');
