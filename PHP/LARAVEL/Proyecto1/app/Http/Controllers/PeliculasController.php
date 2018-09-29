@@ -46,4 +46,9 @@ class PeliculasController extends Controller
       }
       return $a;
     }
+
+    public function index()
+    {
+      return view('peliculas/index',['pelis'=>$this->peliculas]);
+    }
 }

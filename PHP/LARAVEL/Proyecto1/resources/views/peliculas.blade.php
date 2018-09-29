@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="">
-    <head>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-          
-        </div>
-    </body>
-</html>
+@extends('app')
+
+@section('contenido')
+  @forelse ($pelis as $key => $pelicula)
+    <p>{{$pelicula}}</p>
+  @empty
+    <p>No hay pelis</p>
+  @endforelse
+@endsection
