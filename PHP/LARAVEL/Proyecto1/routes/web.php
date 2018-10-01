@@ -38,3 +38,8 @@ Route::get('/peliculas/{id}', 'PeliculasController@buscarPeliculaId');
 Route::get('/peliculas/buscar/{nombre}', 'PeliculasController@buscarPeliculaNombre');
 
 Route::get('/peliculas','PeliculasController@mostrarPeliculas');
+
+
+Route::get('buscar/{peli}','PeliculasController@buscarPeliculaNombre');
+
+Route::get();

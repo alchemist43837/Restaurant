@@ -23,32 +23,51 @@ class PeliculasController extends Controller
       // return $peliculas[$id];
     }
 
-    public function buscarPeliculaNombre($nombre){
+  //   public function buscarPeliculaNombre($nombre){
+  //
+  //     // $a=array_search ($nombre,$this->peliculas,false);
+  //     // dd($a);
+  //     return $this->peliculas[$a];
+  //
+  //     foreach ($this->peliculas as $key => $pelicula) {
+  //       // var_dump($pelicula);
+  //         if($nombre == $pelicula){
+  //           return $pelicula;
+  //       }
+  //
+  //   }
+  // }
+      public function mostrarPeliculas(){
 
-      // $a=array_search ($nombre,$this->peliculas,false);
-      // dd($a);
-      return $this->peliculas[$a];
-
-      foreach ($this->peliculas as $key => $pelicula) {
-        // var_dump($pelicula);
-          if($nombre == $pelicula){
-            return $pelicula;
+        // return $this->peliculas;
+        $a='';
+        foreach ($this->peliculas as $key => $pelicula) {
+           $a.= "<li>".$pelicula."</li>" ;
         }
-
-    }
-  }
-    public function mostrarPeliculas(){
-
-      // return $this->peliculas;
-      $a='';
-      foreach ($this->peliculas as $key => $pelicula) {
-         $a.= "<li>".$pelicula."</li>" ;
+        return $a;
       }
-      return $a;
+
+      public function index()
+      {
+        return view('peliculas/index',['pelis'=>$this->peliculas]);
+      }
+
+      public function buscar($peli){
+      $peliculas=[
+        1 =>'titanic',
+        2 =>'avatar',
+        3 =>'matrix'
+      ];
+
+      $resultado='No hay pelis';
+      foreach ($peliculas as $pelicula) {
+        if($peli==$pelicula){
+          $resultado="Se encontro la peli $pelicula";
+          // break ;
+        }
+      }
+      return $resultado;
+
     }
 
-    public function index()
-    {
-      return view('peliculas/index',['pelis'=>$this->peliculas]);
-    }
 }
