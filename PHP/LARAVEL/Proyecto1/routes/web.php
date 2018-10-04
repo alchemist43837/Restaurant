@@ -45,3 +45,7 @@ Route::get('buscar/{peli}','PeliculasController@buscarPeliculaNombre');
 Route::get('genres','GenreController@index');
 
 Route::get('movie/buscar/{moviebuscar}','MovieController@buscar');
+
+Route::get('/genre/insert','GenreController@insert');
+
+Route::get('/genre/{id}','GenreController@show');
