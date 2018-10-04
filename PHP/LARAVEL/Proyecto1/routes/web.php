@@ -33,7 +33,7 @@ Route::get('/resultado/{numero}/{num2?}',function($numero,$num2=null ) {
 
 });
 
-Route::get('/peliculas/{id}', 'PeliculasController@buscarPeliculaId');
+// Route::get('/peliculas/{id}', 'PeliculasController@buscarPeliculaId');
 
 Route::get('/peliculas/buscar/{nombre}', 'PeliculasController@buscarPeliculaNombre');
 
@@ -49,3 +49,5 @@ Route::get('movie/buscar/{moviebuscar}','MovieController@buscar');
 Route::get('/genre/insert','GenreController@insert');
 
 Route::get('/genre/{id}','GenreController@show');
+
+Route::get('/peliculas/{id}', 'MovieController@showDetails');

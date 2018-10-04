@@ -29,7 +29,7 @@ class GenreController extends Controller
     {
       $genre =Genre::find($id);
       // $genre = Genre('name')->get();
-      return view('Genre.index',['genre'=>$genre]);
+      return view('Movie.index',['genre'=>$genre]);
     }
 
 public function insert()
@@ -41,7 +41,7 @@ public function insert()
 
   // $genre->save();
 
-  // 
+  //
   //   $genre= \App\Genre::create([
   // 'name'=> 'SitCom',
   // 'ranking'=>14,

@@ -25,6 +25,15 @@ class MovieController extends Controller
       return  view('Movie.index',['movies'=>$movies]);
 
     }
+
+    public function showDetails($id)
+    {
+      $movie =Movie::find($id);
+      // $genre = Genre('name')->get();
+      return view('Genre.moviedetails',['movie'=>$movie]);
+
+    }
+
   }
   //   public function buscar($peli){
   //   $peliculas=[
