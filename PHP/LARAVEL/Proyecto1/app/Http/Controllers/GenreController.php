@@ -29,7 +29,7 @@ class GenreController extends Controller
     {
       $genre =Genre::find($id);
       // $genre = Genre('name')->get();
-      return view('Movie.index',['genre'=>$genre]);
+      return view('Genre.index',['genre'=>$genre]);
     }
 
 public function insert()

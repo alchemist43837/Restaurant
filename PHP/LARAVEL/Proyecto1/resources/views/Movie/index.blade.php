@@ -10,9 +10,9 @@
         <li>{{$movie->title}}</li>
       @endforeach --}}
 
-      <ul> {{$genre->movies->title}} </ul>
+      {{-- <ul> {{$genre->movies->title}} </ul> --}}
       @foreach ($genre->movies as $a)
-        <li>]{{$a->ranking}}</li>
+        <li>{{$a->ranking}}</li>
         <li>{{$a->active}}</li>
       @endforeach
 
