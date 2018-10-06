@@ -50,4 +50,8 @@ Route::get('/genre/insert','GenreController@insert');
 
 Route::get('/genre/{id}','GenreController@show');
 
-Route::get('/peliculas/{id}', 'MovieController@showDetails');
+// Route::get('/peliculas/{id}', 'MovieController@showDetails');
+
+Route::get('/peliculas/create','Movie\MovieController@create');
+
+Route::get('/peliculas/insert','Movie\MovieController@insert');
