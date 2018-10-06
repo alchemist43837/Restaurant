@@ -55,3 +55,5 @@ Route::get('/genre/{id}','GenreController@show');
 Route::get('/peliculas/create','Movie\MovieController@create');
 
 Route::get('/peliculas/insert','Movie\MovieController@insert');
+
+// --admin

@@ -18,3 +18,10 @@
 
   </body>
 </html>
+
+{{-- 
+<select class="" name="">
+    @foreach ($genre as $key => $value)
+
+    @endforeach
+</select> --}}

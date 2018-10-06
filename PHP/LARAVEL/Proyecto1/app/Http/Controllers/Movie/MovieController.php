@@ -20,13 +20,19 @@ class MovieController extends Controller
 
         \App\Movie::create($request->all());
 
-p
+
         return view('Movie.pelicula');
 
 
 
 
 
+      }
+
+      function edit($id){
+        $movie = Movie :: find($id);
+
+        return view(admin.movie)
       }
 
 
