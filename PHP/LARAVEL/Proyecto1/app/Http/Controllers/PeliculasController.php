@@ -16,6 +16,9 @@ class PeliculasController extends Controller
   ];
 
 
+
+
+
   public function  buscarPeliculaId($id){
 
     return  $this->peliculas[$id];
