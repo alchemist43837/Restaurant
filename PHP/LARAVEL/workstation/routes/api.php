@@ -1,5 +1,6 @@
 <?php
 
+use App\Movie;
 use Illuminate\Http\Request;
 
 /*
@@ -13,6 +14,12 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
+Route::get('/user', function (Request $request) {
     return $request->user();
-});
+})->middleware('auth:api');
+
+
+
+Route::get('movies', 'Api\MovieController@index');
+
+Route::delete('movies/{id}', 'Api\MovieController@destroy')->middleware('auth:api');
