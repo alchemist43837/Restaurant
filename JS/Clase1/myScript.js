@@ -14,9 +14,18 @@ var IronMan ={
     ],
     energia : 100,
     getPoder: function(poder){
-      return this.poderes[poder];
-    }
-};
+      if (this.poderes[poder]=='volar'){
+        return this.energia -=20;
+      }
+      else if (this.poderes[poder]=='lanzar misiles'){
+        return this.energia -= 45;
+      }
+      else if (this.poderes[poder]=='disparar laser'){
+        return this.energia -= 75;
+      };
+      return this.energia;
+      }
+    };
 
 var Hulk ={
     nombre:"Hulk",
@@ -41,36 +50,32 @@ var Hulk ={
 
 var poder = Math.floor(Math.random()*3);
 
-while (Hulk.energia > 0) {
-   Hulk.getPoder(poder)
-   if (Hulk.energia<=0) {
-     console.log('Estas Muerto');
-   }
-   else console.log (Hulk.energia);
-
+function jugar(jugador) {
+    while (jugador.energia > 0) {
+       jugador.getPoder(poder)
+       if (jugador.energia<=0) {
+         console.log('Estas Muerto');
+       }
+       else console.log (jugador.energia);
+    }
 }
 
-var botonDePrueba= document.querySelector( "#miBoton");
+jugar(Hulk);
+jugar(IronMan);
 
+//otra solucion :
+// while (Hulk.energia > 0) {
+//    Hulk.getPoder(poder)
+//    if (Hulk.energia<=0) {
+//      console.log('Estas Muerto');
+//    }
+//    else console.log (Hulk.energia);
+// }
+var botonDePrueba= document.querySelector( "#miBoton");
 botonDePrueba.onclick=function(){alert("testeandoClick")}
 
+var MisDatos ={
+  nombre :'',
+  apellido :'',
 
-
-
-
-
-
-// console.log (Hulk.getPoder(poder));
-// console.log (Hulk.getPoder(poder));
-// console.log (Hulk.getPoder(poder));
-// console.log (Hulk.getPoder(poder));
-// console.log (Hulk.getPoder(poder));
-// console.log (Hulk.getPoder(poder));
-// console.log (Hulk.getPoder(poder));
-// var funtion elegirPoder() {
-//
-// }
-//
-//
-//
-//
+}
