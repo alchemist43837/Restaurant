@@ -1,11 +1,17 @@
 var formulario = document.querySelector(".contact-form")
+// var formulario = document.querySelector(".contact-form")
 var elementsForm = formulario.elements;
 var elFormArray=Array.from(elementsForm);
 // elFormArray.pop();
+    errores=[];
+invfed= document.querySelectorAll(".invalid-feedback");
+console.log(invfed);
     elFormArray.forEach(function(element){
+
         element.addEventListener('blur',function(){
             if (this.value=='') {
               this.classList.add('is-invalid');
+              invfed.innerHTML='Error cargar datos en '+this.element;
               console.log('Error blur');
             }
             else{
@@ -14,9 +20,26 @@ var elFormArray=Array.from(elementsForm);
       });
     });
 
+    // var invfed= document.querySelector(".invalid-feedback");
+    // elFormArray.forEach(function(element){
+    //     element.addEventListener('blur',function(){
+    //       var invfed= document.querySelector(".invalid-feedback");
+    //         if (this.value=='') {
+    //           invfed.innerHTML='Error cargar datos en '+this.element;
+    //           // this.classList.add('invalid-feedback');
+    //           // console.log('Error onfocus');
+    //         }
+    //         else{
+    //           this.classList. remove('invalid-feedback');
+    //         }
+    //   });
+    // });
+
+
+
+
 
     formulario.addEventListener("submit",function(event){
-      if
       console.log('Error desde submit');
       event.preventDefault();
     });
