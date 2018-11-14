@@ -1,4 +1,5 @@
 // sweet alert , plugins , para animacion de alertas
 // izimodal , con Jquery
 //codepen.io ejemplos
-//slick 
+//slick
+//https://repl.it/@alellago_dh/JqueryExamples
